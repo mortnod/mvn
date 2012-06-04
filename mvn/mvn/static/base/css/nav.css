@@ -1,0 +1,59 @@
+header {
+	display: block;
+	height: 189px;
+	background-color: #f4f4f4;
+	min-width: 1050px;
+	border-bottom: #3c3c3c solid 5px;
+	margin-bottom: 20px;
+}
+#headerwrap {
+	width: 1000px;
+	margin: 0 auto;
+}
+#logo {
+	width: 259px;
+	float: left;
+}
+
+#social {
+	height: 40px;
+	width: 158px;
+	float: right;
+	background-color: #3c3c3c;
+	padding-top: 7px;
+}
+	#social ul { padding-left: 9px; }
+	#social li{ display: inline; }
+	#social ul li a{
+		display: block;
+		height: 33px;
+		width: 35px;
+		text-indent: -9999px; 
+		float: left;
+	}
+	#social ul li.rss a      { background: url(/static/base/images/icons/rss.png) top center;}
+	#social ul li.facebook a { background: url(/static/base/images/icons/facebook.png) top center;}
+	#social ul li.twitter a  { background: url(/static/base/images/icons/twitter.png) top center;}
+	#social ul li.mail a     { background: url(/static/base/images/icons/mail.png) top center;}
+
+nav {
+	width: 720px;
+	float: right;
+	margin-top: 90px;
+	letter-spacing: 2px;
+	font-family: "Dosis", "Trebuchet MS", sans-serif;
+	font-weight: normal;
+	font-size: 1.8em;
+}
+	nav a[href] {
+		color: black;
+		margin: 0 30px;
+	}
+
+body#home nav a.home,
+body#cv nav a.cv,
+body#photos nav a.photos,
+body#music nav a.music,
+body#about nav a.about {
+	color: #a43f3f;
+}

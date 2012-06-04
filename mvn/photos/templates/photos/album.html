@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load thumbnail %}
+
+{% block app %}photos{% endblock %}
+{% block title %}{{ album.name }}{% endblock %}
+
+<!-- Hooverzoom dependencies -->
+{% block css %}<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}base/css/hooverzoom.css">{% endblock %}
+{% block scripts %}<script type="text/javascript" src="{{ STATIC_URL }}base/scripts/hooverzoom.jquery.js"></script>{% endblock %}
+
+{% block content %}
+<div id="content" class="no-sidebar">
+	<h1>{{ album.name }}</h1>
+	<p class="meta">Klikk på et bilde for å forstørre det</p>
+	<div class="highslide-gallery">
+	{% for photo in album.photo_set.all %}		 	
+		<a href="{{ MEDIA_URL }}{{ photo.photo }}" class="highslide" onclick="return hs.expand(this)">
+		<img src="{% thumbnail photo.photo 192x192 crop='smart' %}" alt="Highslide JS"
+				title="Klikk på bildet for å forstørre" /></a>
+	{% endfor %}
+	</div>
+</div>
+{% endblock %}
