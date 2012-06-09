@@ -132,3 +132,7 @@ aside h3 {
 .albumcover img.right {
 	float: right;
 }
+.musicplayer {
+    float: left;
+    margin-left: 20px;
+}

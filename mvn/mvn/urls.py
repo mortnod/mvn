@@ -1,5 +1,6 @@
 from django.conf.urls import patterns, include, url
 from django.views.generic.simple import direct_to_template
+from django.conf import settings
 
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
@@ -14,5 +15,12 @@ urlpatterns = patterns('',
 
     url(r'^$', 'blog.views.index', name='blog'),
     (r'^bilder/', include('photos.urls')),
-    url(r'^musikk/$', direct_to_template, {'template': 'music/music.html'}),
+    url(r'^musikk/$', 'music.views.index', name='music'),
 )
+
+if settings.DEBUG:
+    urlpatterns += patterns('',
+         url(r'^media/(?P<path>.*)$', 'django.views.static.serve', {
+            'document_root': settings.MEDIA_ROOT,
+            }),
+    )
