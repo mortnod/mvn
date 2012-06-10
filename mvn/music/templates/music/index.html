@@ -20,7 +20,7 @@ $(document).ready(function(){
 		jPlayer: "#jquery_jplayer_1",
 		cssSelectorAncestor: "#jp_container_1"
 	}, [
-		{% for song in album.song_set.all %}
+		{% for song in album.song_set.all|dictsort:"track_number" %}
         {
 			title: "{{ song.title }}",
 			{% if song.artist %}
