@@ -17,3 +17,4 @@ class CoverPhoto(models.Model):
     album = models.ForeignKey(MusicAlbum)
     photo = models.ImageField('bilde', upload_to='music/cover')
     caption = models.CharField('bildetekst', max_length=250, blank=True, null=True)
+    image_number = models.SmallIntegerField()

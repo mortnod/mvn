@@ -48,7 +48,7 @@ $(document).ready(function(){
     <p class="meta">Klassisk musikk spilt inn for moro skyld</p>
     {% for album in albums %}
     <div class="highslide-gallery albumcover">		 	
-        {% for cover in album.coverphoto_set.all %}
+        {% for cover in album.coverphoto_set.all|dictsort:"image_number" %}
             <a href="{{ MEDIA_URL }}{{ cover.photo }}" class="highslide" onclick="return hs.expand(this)">
 	        {% if forloop.first %}
             <img src="{% thumbnail cover.photo 200x200 crop='smart' %}"  alt="Highslide JS"
