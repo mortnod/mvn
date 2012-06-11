@@ -17,8 +17,8 @@ $(document).ready(function(){
 
     {% for album in albums %}
 	new jPlayerPlaylist({
-		jPlayer: "#jquery_jplayer_1",
-		cssSelectorAncestor: "#jp_container_1"
+		jPlayer: "#jquery_jplayer_{{ forloop.counter }}",
+		cssSelectorAncestor: "#jp_container_{{ forloop.counter }}"
 	}, [
 		{% for song in album.song_set.all|dictsort:"track_number" %}
         {
@@ -45,29 +45,31 @@ $(document).ready(function(){
 {% block content %}
 <div id="content" class="no-sidebar">
     <h1>Musikk</h1>
-    <p class="meta">Klassisk musikk spilt inn for moro skyld</p>
+    <p class="meta">Jeg spiller piano en gang i blant. Dette er noe av det som har gått mindre galt</p>
     {% for album in albums %}
-    <div class="highslide-gallery albumcover">		 	
-        {% for cover in album.coverphoto_set.all|dictsort:"image_number" %}
-            <a href="{{ MEDIA_URL }}{{ cover.photo }}" class="highslide" onclick="return hs.expand(this)">
-	        {% if forloop.first %}
-            <img src="{% thumbnail cover.photo 200x200 crop='smart' %}"  alt="Highslide JS"
-            title="Klikk på bildet for å forstørre"></a>
-            {% else %}
-            <img src="{% thumbnail cover.photo 98x98 crop='smart' %}"  alt="Highslide JS"
-            title="Klikk på bildet for å forstørre" class="{% cycle 'left' 'right' %}"></a>
-            {% endif %}
-    {% endfor %}
-    </div>
-    
-    <div class="musicplayer">
-        <h3>{{ album.name }}</h3>
-        <div id="jquery_jplayer_1" class="jp-jplayer"></div>
-        <div id="jp_container_1" class="jp-audio">
-            {% include 'music/jplayer.html' %}
+    <div class="musicalbum">
+        <div class="highslide-gallery albumcover">		 	
+            {% for cover in album.coverphoto_set.all|dictsort:"image_number" %}
+                <a href="{{ MEDIA_URL }}{{ cover.photo }}" class="highslide" onclick="return hs.expand(this)">
+	            {% if forloop.first %}
+                    <img src="{% thumbnail cover.photo 200x200 crop='smart' %}"  alt="Highslide JS"
+                    title="Klikk på bildet for å forstørre"></a>
+                {% else %}
+                    <img src="{% thumbnail cover.photo 98x98 crop='smart' %}"  alt="Highslide JS"
+                    title="Klikk på bildet for å forstørre" class="{% cycle 'left' 'right' %}"></a>
+                {% endif %}
+            {% endfor %}
         </div>
+    
+        <div class="musicplayer">
+            <h3>{{ album.name }}</h3>
+            <div id="jquery_jplayer_{{ forloop.counter }}" class="jp-jplayer"></div>
+            <div id="jp_container_{{ forloop.counter }}" class="jp-audio">
+                {% include 'music/jplayer.html' %}
+            </div>
+        </div><!-- End musicplayer -->
         <div class="clear"></div>
-    </div>
+    </div><!-- End musicalbum -->
     {% endfor %}
-</div>
+</div><!-- End content -->
 {% endblock %}
