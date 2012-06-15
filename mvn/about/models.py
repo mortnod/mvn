@@ -1,3 +1,5 @@
 from django.db import models
 
-# Create your models here.
+class About(models.Model):
+    portrait = models.ImageField(upload_to='about/')
+    text = models.TextField()

@@ -34,7 +34,7 @@ $(document).ready(function(){
 			displayTime: 0
     	},
 		swfPath: "{{ STATIC_URL }}base/scripts/jplayer",
-		supplied: "m4a", //"oga",
+		supplied: "m4a", //alternative: "m4a, oga",
 		wmode: "window",
 	});
     {% endfor %}
@@ -45,7 +45,7 @@ $(document).ready(function(){
 {% block content %}
 <div id="content" class="no-sidebar">
     <h1>Musikk</h1>
-    <p class="meta">Jeg spiller piano en gang i blant. Dette er noe av det som har gått mindre galt</p>
+    <p class="meta">Jeg spiller piano en gang i blant. Her er noe av det som har gått mindre galt</p>
     {% for album in albums %}
     <div class="musicalbum">
         <div class="highslide-gallery albumcover">		 	

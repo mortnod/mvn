@@ -61,8 +61,8 @@ a[href] {
 	}
 
 /* TOOLS */
-.floatleft { float: left; }
-.floatright { float: right; }
+.left { float: left; }
+.right { float: right; }
 .clear { clear: both; }
 /* END TOOLS */
 
@@ -89,14 +89,12 @@ html, body { height: 100%; }
 	width: 1000px;
 }
 
-
 #photos #content {
 	margin-bottom: 40px;
 }
 div.highslide-gallery {
 	clear: both;
 }
-
 
 article {
 	padding: 20px;
@@ -126,12 +124,7 @@ aside h3 {
 	display: block;
 	margin-bottom: 3px;
 }
-.albumcover img.left {
-	float: left;
-}
-.albumcover img.right {
-	float: right;
-}
+
 .musicplayer {
     float: left;
     margin-left: 20px;
@@ -139,4 +132,12 @@ aside h3 {
 
 .musicalbum {
     margin-bottom: 40px;
+}
+
+.about-text {
+}
+
+.about-portrait {
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
