@@ -1,7 +1,6 @@
 from django.conf.urls import patterns, include, url
-from django.views.generic.simple import direct_to_template
+from django.views.generic.simple import direct_to_template, redirect_to
 from django.conf import settings
-from django.views.generic.simple import redirect_to
 
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
@@ -18,6 +17,7 @@ urlpatterns = patterns('',
     (r'^bilder/', include('photos.urls')),
     url(r'^musikk/$', 'music.views.index', name='music'),
     url(r'ommeg/$', 'about.views.index', name='about'),
+    url(r'404/$', direct_to_template, {'template': '404.html'}),
     (r'feed/$', redirect_to, {'url': 'http://www.youtube.com/watch?v=oHg5SJYRHA0'}),
 )
 
