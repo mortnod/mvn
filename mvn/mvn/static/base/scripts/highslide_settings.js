@@ -1,4 +1,3 @@
-hs.graphicsDir = 'http://wf.mvn.no/static/base/scripts/highslide/graphics/';
 hs.align = 'center';
 hs.transitions = ['expand', 'crossfade'];
 hs.wrapperClassName = 'dark borderless floating-caption';

@@ -21,9 +21,12 @@
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
 	
 	<!-- Highslide image viewer -->
-	<script type="text/javascript" src="{{ STATIC_URL }}base/scripts/highslide/highslide-with-gallery.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}base/scripts/highslide/highslide-with-gallery.js"></script>
 	<script type="text/javascript" src="{{ STATIC_URL }}base/scripts/highslide_settings.js"></script>
-	<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}base/scripts/highslide/highslide.css">
+	<script type="text/javascript">
+        hs.graphicsDir = '{{ STATIC_URL }}base/scripts/highslide/graphics/';
+    </script>
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}base/scripts/highslide/highslide.css">
 	
 	{% block css %}{% endblock %}
 	{% block scripts %}{% endblock %}
