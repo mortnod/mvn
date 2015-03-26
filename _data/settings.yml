@@ -1,5 +1,6 @@
-#-------------------------------
-# General Site Settings
+#-------------------------
+# GENERAL SITE SETTINGS
+#-------------------------
 
 title: Morten Vaale Noddeland
 description: Design // Utvikling // Dårlige ordspill
@@ -13,8 +14,9 @@ email: morten@noddeland.no
 # - {name: Clients, url: '#clients'}
 # - {name: Contact, url: '#contact'}
 
-#-------------------------------
-# SEO Section
+#-------------------------
+# SEO
+#-------------------------
 
 # NOTE: Providing SEO information will make this website more searchable on the internet. Description shouldn't be longer than 160 characters.
 
@@ -23,8 +25,9 @@ seo:
   rel-author: 'https://plus.google.com/106898828237970461040'
   rel-publisher: 'https://plus.google.com/106898828237970461040'
 
-#-------------------------------
-# Google Analytics Section
+#-------------------------
+# GOOGLE ANALYTICS
+#-------------------------
 
 # Analytics helps you understand who visits your website.
 # Learn more at: http://support.google.com/analytics/answer/1008065
@@ -33,8 +36,9 @@ seo:
 
 google-analytics-ua: UA-61199399-1
 
-#-------------------------------
-# About Section
+#-------------------------
+# ABOUT SECTION
+#-------------------------
 
 # NOTE: The avatar is defined in the all.sass document.
 
@@ -53,8 +57,9 @@ blurb: >
 # - {name: UX Design, value: '8'}
 # - {name: Programming, value: '6'}
 
-#-------------------------------
-# Work Section
+#-------------------------
+# WORK SECTION
+#-------------------------
 
 # projects:
 # - {name: TYPO International Design Talks, folder: 'proj-1', file: 'work/proj-1.html'}
@@ -69,8 +74,9 @@ blurb: >
 
 
 
-#-------------------------------
-# Clients Section
+#-------------------------
+# CLIENTS SECTION
+#-------------------------
 
 # clients:
 # - {avatar: 'face-aaroni.jpg',
@@ -95,8 +101,9 @@ blurb: >
 #   logo: 'logo4.png'}
 
 
-#-------------------------------
-# Contact Section
+#-------------------------
+# CONTACT SECTION
+#-------------------------
 
 # social:
 # - {icon: 'twitter', link: 'http://twitter.com/devtipsshow'}
