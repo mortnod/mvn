@@ -1,7 +1,7 @@
 #-------------------------
 # COLORS
 #-------------------------
-accent: "#732836"
+accent: "#732836" # "#bf616a"
 textColor: "#666"
 headlineColor: "#333"
 backgroundColor: "#e5eaee"

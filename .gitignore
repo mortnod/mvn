@@ -1,15 +1,33 @@
-# Jekyll
+# Project output folders
 _site
+_production
+
+# Hide the Rsync credentials file
+rsync-credentials.json
 
 # Sass
 .sass-cache
 
-# OS X
-.DS_Store
+# Packages
+node_modules/*
 
-# Files that might appear on external disk #
+# This might be a bad idea
+gemfile.lock
+
+# OS X
+._*
+.AppleDouble
+.DS_Store
+.localized
+.LSOverride
 .Spotlight-V100
 .Trashes
+Icon
+
+# Windows
+Desktop.ini
+ehthumbs.db
+Thumbs.db
 
 # Linux
 #.*
@@ -19,14 +37,3 @@ _site
 
 # Log
 *.log
-
-# Vim
-*.swp
-*.swo
-.*.sw[a-z]
-*.un~
-
-# TextMate
-*.tmproj
-*.tmproject
-tmtags

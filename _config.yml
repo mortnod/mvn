@@ -1,4 +1,6 @@
-# Build settings
+#-------------------------
+# BUILD SETTINGS
+#-------------------------
 
 markdown: kramdown
 permalink: pretty
@@ -8,6 +10,10 @@ port: 8000
 # include: ['_includes/work']
 # exclude: ['the_design.psd']
 
+# Used so Jekyll outputs the site correctly so Gulp can do what it wants
+source: src
+# destination: serve
+
 sass:
-  sass_dir: assets/css
-  style: :compressed
+  sass_dir: assets/scss
+  style: :nested

@@ -13,7 +13,10 @@
 
   <title>{{ site.data.settings.title }}</title>
 
-  <link rel="stylesheet" href="assets/css/main.css">
+  <!-- CSS -->
+  <!-- build:css /assets/css/main.min.css -->
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <!-- endbuild -->
   <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
   {% include analytics.html %}
@@ -25,11 +28,17 @@
   <h1>Mens vi venter på bedre innhold...</h1>
   <h3>Det er jo love å håpe at det dukker opp noe innhold på et tidspunkt</h3>
 
+<section class="alt-section">
   <p>Dette er en <a href="#">lenke</a></p>
+</section>
 
   {% include footer.html %}
 
+
+  <!-- JS -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script src="assets/js/main.js"></script>
+  <!-- build:js /assets/js/main.min.js -->
+  <script src="/assets/js/main.js"></script>
+  <!-- endbuild -->
 </body>
 </html>
