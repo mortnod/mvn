@@ -40,9 +40,7 @@ gulp.task("jekyll-rebuild", ["jekyll"], function () {
 gulp.task("styles", function () {
   // Looks at the main.scss file for what to include and creates a main.css file
   return gulp.src("src/assets/scss/main.scss")
-    .pipe($.sass({
-      errLogToConsole: true
-    }))
+    .pipe($.sass())
     // AutoPrefix your CSS so it works between browsers
     .pipe($.autoprefixer("last 1 version", { cascade: true }))
     // Directory your CSS file goes to
