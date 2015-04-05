@@ -1,22 +1,12 @@
-$accent: #6b91c0;
-$accent-light: #98bde7;
-$accent-dark: #42526c;
-$selectionColor: lighten($accent, 35%);
-
-$textColor: #666;
-$headlineColor: #333;
-$backgroundColor: #dae6f2;
-$documentBackgroundColor: #fff;
-
 //------------------------------------------------
 // IMPORTS
 //------------------------------------------------
-
 // Import tools
 @import '1-tools/normalize';
 @import '1-tools/spinner';
 
 // Import base
+@import '2-base/constants';
 @import '2-base/placeholders';
 @import '2-base/base';
 
