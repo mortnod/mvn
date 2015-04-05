@@ -12,7 +12,18 @@
 .blurb {
   font-size: 2.6rem;
   font-weight: 300;
-  max-width: 800px;
+  max-width: 600px;
   margin: 0 auto;
   margin-top: 50px;
+}
+
+@media screen and (max-width: 600px) {
+  .avatar {
+    width: 150px;
+  }
+
+  .blurb {
+    font-size: 2rem;
+    margin-top: 25px;
+  }
 }
