@@ -13,6 +13,10 @@
   <meta rel="publisher" href="{{ site.data.settings.seo.rel-publisher }}">
 
   <title>{{ site.data.settings.title }}</title>
+  <link rel="icon" type="image/png" href="/assets/img/favicon.ico">
+
+  <!-- Fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,700|Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
 
   <!-- CSS -->
   <!-- build:css /assets/css/main.min.css -->
@@ -26,12 +30,7 @@
 
   {% include header.html %}
 
-  <h1>Mens vi venter på bedre innhold...</h1>
-  <h3>Det er jo love å håpe at det dukker opp noe innhold på et tidspunkt</h3>
-
-<section class="alt-section">
-  <p>Dette er en <a href="#">lenke</a></p>
-</section>
+  {% include about.html %}
 
   {% include footer.html %}
 

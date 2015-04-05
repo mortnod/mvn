@@ -1,10 +1,11 @@
-$accent: #732836;
-$accent-light: adjust-hue(saturate(lighten($accent, 11%), 12.6%), 14%);
-$selectionColor: lighten($accent, 30%);
+$accent: #6b91c0;
+$accent-light: #98bde7;
+$accent-dark: #42526c;
+$selectionColor: lighten($accent, 35%);
 
 $textColor: #666;
 $headlineColor: #333;
-$backgroundColor: #e5eaee;
+$backgroundColor: #dae6f2;
 $documentBackgroundColor: #fff;
 
 //------------------------------------------------
@@ -13,7 +14,6 @@ $documentBackgroundColor: #fff;
 
 // Import tools
 @import '1-tools/normalize';
-@import '1-tools/fonts';
 @import '1-tools/spinner';
 
 // Import base
@@ -23,4 +23,4 @@ $documentBackgroundColor: #fff;
 // Import sections
 @import '3-sections/header';
 @import '3-sections/footer';
-// @import '3-sections/about';
+@import '3-sections/about';

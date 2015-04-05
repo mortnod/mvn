@@ -40,11 +40,11 @@ google-analytics-ua: UA-61199399-1
 # ABOUT SECTION
 #-------------------------
 
-# NOTE: The avatar is defined in the all.sass document.
+# NOTE: The avatar is defined in the main.scss document.
 
 blurb: >
-  **Jeg heter Morten Vaale Noddeland.**
-  Jeg er 26 år, over gjennomsnittlig høy og under gjennomsnittlig glad i ananas. På fritiden (og jobbtiden) lager jeg snasne nettsider for interweben.
+  **Hei! Jeg heter Morten.**
+  Jeg er 26 år, over gjennomsnittlig høy og under gjennomsnittlig glad i [ananas](#). På fritiden (og jobbtiden) lager jeg snasne nettsider.
 
 
 # skills:
