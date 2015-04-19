@@ -1,9 +1,11 @@
 header {
   background-color: $backgroundColor;
+  overflow: hidden;
 
   .mountain-container {
     position: relative;
     padding-bottom: 10vw;
+    overflow: hidden;
   }
 
   .mountain {
