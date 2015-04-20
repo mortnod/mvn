@@ -54,6 +54,5 @@ $(window).scroll(function(){
     mountainTransform('.m-right-1', mountains.right1.scale, mountains.right1.translateX);
 
     $('.tagline').css('opacity', 1 - windowScroll*0.03);
-    $('header h1').css('transform', 'translateY(' + windowScroll*0.8 + 'px)');
   }
 });
