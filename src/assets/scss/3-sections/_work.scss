@@ -1,0 +1,89 @@
+.project {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  display: flex;
+
+  &.project-reverse-content {
+    flex-direction: row-reverse;
+  }
+}
+
+.project-image {
+  width: 60%;
+
+
+  img {
+    width: 100%;
+    display: block;
+    // box-shadow: 0 1px 2px 0 #B3B3B3;
+  }
+
+  .browser {
+    background-color: $headlineColor;
+    height: 40px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 5px 25px;
+    // box-shadow: 0 1px 2px 0 #B3B3B3;
+
+    .close, .minimize, .maximize {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 10px;
+      margin-right: 5px;
+    }
+
+    .close {
+      background-color: #fd6366;
+    }
+
+    .minimize {
+      background-color: #f7d33b;
+    }
+
+    .maximize {
+      background-color: #46e064;
+    }
+
+    .menu {
+      float: right;
+      color: #888;
+    }
+  }
+}
+
+.project-description {
+  width: 40%;
+  padding: 0 0 0 40px;
+
+  .project-reverse-content & {
+    padding: 0 40px 0 0;
+  }
+
+  h3 {
+    line-height: 1;
+    font-family: 'Open sans';
+    font-size: 2.5rem;
+    .section-dark & {
+      color: $accent-light;
+    }
+  }
+
+  time {
+    display: block;
+    color: $accent-light;
+
+    .section-dark & {
+      color: $accent;
+    }
+  }
+
+  .intro {
+    .section-dark & {
+       color: white;
+    }
+  }
+}
+

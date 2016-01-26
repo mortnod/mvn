@@ -80,7 +80,7 @@ body {
   background: $documentBackgroundColor;
   font-size: 1.8rem;
   line-height: 1.6;
-  font-family: 'Open Sans' sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: $textColor;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
@@ -109,6 +109,10 @@ h2 {
   .alt-section & {
     color: darken($accent, 10%);
   }
+
+  .section-dark & {
+    color: white;
+  }
 }
 
 h3 {
@@ -134,4 +138,8 @@ section {
 
 .alt-section {
   background: $backgroundColor;
+}
+
+.section-dark {
+  background: $accent-dark;
 }
