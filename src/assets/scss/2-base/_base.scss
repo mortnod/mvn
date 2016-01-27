@@ -19,7 +19,7 @@ html {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Josefin Sans', 'Open Sans', sans-serif;
-  color: $headlineColor;
+  color: $color-mine-shaft;
   font-weight: bold;
   margin: 0;
 }
@@ -48,40 +48,40 @@ hr {
 // LINKS
 //------------------------------------------------
 a {
-  color: $accent;
+  color: $color-fjord;
   text-decoration: none;
   outline: 0;
 }
 
 a:hover, a:focus {
-  color: $accent-light;
-  border-bottom: 1px solid $accent-light;
+  color: $color-bermuda;
+  border-bottom: 1px solid $color-bermuda;
 }
 
 //------------------------------------------------
 // SELECTION COLORS
 //------------------------------------------------
 ::selection {
-  background: $selectionColor;
+  background: $color-shell;
 }
 
 ::-moz-selection {
-  background: $selectionColor;
+  background: $color-shell;
 }
 
 body {
-  -webkit-tap-highlight-color: $selectionColor;
+  -webkit-tap-highlight-color: $color-shell;
 }
 
 //------------------------------------------------
 // BASIC STYLING
 //------------------------------------------------
 body {
-  background: $documentBackgroundColor;
+  background: $color-white;
   font-size: 1.8rem;
   line-height: 1.6;
   font-family: 'Open Sans', sans-serif;
-  color: $textColor;
+  color: $color-dim-gray;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
 }
@@ -100,14 +100,14 @@ h1 {
 
 h2 {
   @extend %small-bold;
-  color: $accent;
+  color: $color-fjord;
   padding-bottom: 50px;
   font-size: 2rem;
   line-height: 1.38;
   text-align: center;
 
   .alt-section & {
-    color: darken($accent, 10%);
+    color: darken($color-fjord, 10%);
   }
 
   .section-dark & {
@@ -137,9 +137,9 @@ section {
 }
 
 .alt-section {
-  background: $backgroundColor;
+  background-color: $color-iceberg;
 }
 
 .section-dark {
-  background: $accent-dark;
+  background-color: $color-astronaut;
 }

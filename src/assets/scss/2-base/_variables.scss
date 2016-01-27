@@ -1,0 +1,30 @@
+//------------------------------------------------
+// COLORS
+//------------------------------------------------
+/* Name that color! http://chir.ag/projects/name-that-color/ */
+
+// Blues
+$color-astronaut: #42526c;
+$color-fjord: #6b91c0;
+$color-bermuda: #98bde7;
+$color-iceberg: #dae6f2;
+$color-shell: lighten($color-fjord, 35%);
+
+// Grays
+$color-mine-shaft: #333;
+$color-dim-gray: #666;
+$color-white: #fff;
+
+// Other
+$color-bittersweet: #fd6366;
+$color-saffron: #f7d33b;
+$color-emerald: #46e064;
+
+//------------------------------------------------
+// PLACEHOLDERS
+//------------------------------------------------
+%small-bold {
+  font-family: 'Josefin Sans', 'Open Sans', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}

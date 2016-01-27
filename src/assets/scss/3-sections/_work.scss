@@ -16,16 +16,16 @@
   img {
     width: 100%;
     display: block;
-    // box-shadow: 0 1px 2px 0 #B3B3B3;
+    box-shadow: 0 1px 1px rgba(black, 0.2);
   }
 
   .browser {
-    background-color: $headlineColor;
+    background-color: $color-mine-shaft;
     height: 40px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     padding: 5px 25px;
-    // box-shadow: 0 1px 2px 0 #B3B3B3;
+    box-shadow: 0 1px 1px rgba(black, 0.2);
 
     .close, .minimize, .maximize {
       display: inline-block;
@@ -36,20 +36,20 @@
     }
 
     .close {
-      background-color: #fd6366;
+      background-color: $color-bittersweet;
     }
 
     .minimize {
-      background-color: #f7d33b;
+      background-color: $color-saffron;
     }
 
     .maximize {
-      background-color: #46e064;
+      background-color: $color-emerald;
     }
 
     .menu {
       float: right;
-      color: #888;
+      color: $color-dim-gray;
     }
   }
 }
@@ -67,23 +67,22 @@
     font-family: 'Open sans';
     font-size: 2.5rem;
     .section-dark & {
-      color: $accent-light;
+      color: $color-bermuda;
     }
   }
 
   time {
     display: block;
-    color: $accent-light;
+    color: $color-bermuda;
 
     .section-dark & {
-      color: $accent;
+      color: $color-fjord;
     }
   }
 
   .intro {
     .section-dark & {
-       color: white;
+       color: $color-white;
     }
   }
 }
-

@@ -1,5 +1,5 @@
 header {
-  background-color: $backgroundColor;
+  background-color: $color-iceberg;
   background-image: url(../img/header/mvn-logo.svg);
   background-repeat: no-repeat;
   background-position: center 35px;
@@ -22,7 +22,7 @@ header {
     padding-top: 40px;
     text-align: center;
     line-height: 0.8;
-    color: $accent-dark;
+    color: $color-astronaut;
     visibility: hidden;
   }
 
@@ -30,7 +30,7 @@ header {
     text-align: center;
     font-weight: 300;
     line-height: 1.2;
-    color: $accent;
+    color: $color-fjord;
     font-size: 2.5rem;
   }
 
