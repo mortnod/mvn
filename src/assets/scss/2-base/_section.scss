@@ -1,0 +1,33 @@
+.section {
+  padding: 100px 20px;
+}
+
+.section__header {
+  font-size: $font-size-large;
+  text-transform: uppercase;
+  color: $color-fjord;
+  padding-bottom: 50px;
+}
+
+.section--theme-dark {
+  background-color: $color-astronaut;
+  color: $color-white;
+
+  .section__header {
+    color: $color-white;
+  }
+}
+
+.section--theme-light {
+  background-color: $color-iceberg;
+
+  .section__header {
+    color: darken($color-fjord, 10%);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .section {
+    padding: 50px 20px;
+  }
+}

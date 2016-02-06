@@ -3,86 +3,77 @@
   margin: 0 auto;
   margin-bottom: 100px;
   display: flex;
-
-  &.project-reverse-content {
-    flex-direction: row-reverse;
-  }
 }
 
-.project-image {
+.project--flip-content {
+  flex-direction: row-reverse;
+}
+
+//------------------------------------------------
+// PROJECT IMAGE
+//------------------------------------------------
+.project__image {
   width: 60%;
 
-
   img {
+    @extend %box-shadow;
     width: 100%;
     display: block;
-    box-shadow: 0 1px 1px rgba(black, 0.2);
-  }
-
-  .browser {
-    background-color: $color-mine-shaft;
-    height: 40px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    padding: 5px 25px;
-    box-shadow: 0 1px 1px rgba(black, 0.2);
-
-    .close, .minimize, .maximize {
-      display: inline-block;
-      width: 10px;
-      height: 10px;
-      border-radius: 10px;
-      margin-right: 5px;
-    }
-
-    .close {
-      background-color: $color-bittersweet;
-    }
-
-    .minimize {
-      background-color: $color-saffron;
-    }
-
-    .maximize {
-      background-color: $color-emerald;
-    }
-
-    .menu {
-      float: right;
-      color: $color-dim-gray;
-    }
   }
 }
 
-.project-description {
+//------------------------------------------------
+// PROJECT DESCRIPTION
+//------------------------------------------------
+.project__description {
   width: 40%;
   padding: 0 0 0 40px;
 
-  .project-reverse-content & {
+  .project--flip-content & {
     padding: 0 40px 0 0;
-  }
-
-  h3 {
-    line-height: 1;
-    font-family: 'Open sans';
-    font-size: 2.5rem;
-    .section-dark & {
-      color: $color-bermuda;
-    }
   }
 
   time {
     display: block;
     color: $color-bermuda;
-
-    .section-dark & {
-      color: $color-fjord;
-    }
   }
+}
 
-  .intro {
-    .section-dark & {
-       color: $color-white;
-    }
+.project__header {
+  line-height: 1;
+  font-family: $font-primary;
+  font-size: $font-size-large;
+
+  .section--theme-dark & {
+    color: $color-bermuda;
   }
+}
+
+//------------------------------------------------
+// BROWSER BAR
+//------------------------------------------------
+.browser {
+  @extend %box-shadow;
+  background-color: $color-mine-shaft;
+  height: 40px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 5px 25px;
+}
+
+.browser__close, .browser__minimize, .browser__maximize {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  margin-right: 5px;
+}
+
+.browser__close {    background-color: $color-bittersweet; }
+.browser__minimize { background-color: $color-saffron; }
+.browser__maximize { background-color: $color-emerald; }
+
+.browser__menu {
+  float: right;
+  color: $color-dim-gray;
 }

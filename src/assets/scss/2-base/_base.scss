@@ -10,34 +10,35 @@ html {
 }
 
 //------------------------------------------------
-//	TYPOGRAPHY RESETS
+//	TOOLBOX
 // -----------------------------------------------
-/* Rem sizing trick from http://snook.ca/archives/html_and_css/font-size-with-rem */
-html {
-  font-size: 62.5%;
+.hide {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Josefin Sans', 'Open Sans', sans-serif;
-  color: $color-mine-shaft;
-  font-weight: bold;
-  margin: 0;
+.text-center {
+  text-align: center;
 }
 
-p {
-  margin: 0 0 1rem 0;
+//------------------------------------------------
+//	RESETS
+// -----------------------------------------------
+svg {
+  width: 100%;
+  height: 100%;
 }
 
-em {
-  font-style: italic;
-}
-
-strong {
-  font-weight: bold;
+//------------------------------------------------
+// BASIC STYLING
+//------------------------------------------------
+body {
+  background: $color-white;
 }
 
 hr {
-  border: solid #ddd;
+  border: solid $color-shell;
   border-width: 1px 0 0 0;
   clear: both;
   margin: 10px 0 30px 0;
@@ -45,17 +46,48 @@ hr {
 }
 
 //------------------------------------------------
-// LINKS
-//------------------------------------------------
+//	TYPOGRAPHY
+// -----------------------------------------------
+/* Rem sizing trick from http://snook.ca/archives/html_and_css/font-size-with-rem */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: $color-white;
+  font-size: $font-size-medium;
+  line-height: $font-line-height;
+  font-family: $font-primary;
+  color: $color-dim-gray;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-secondary;
+  color: $color-mine-shaft;
+  font-weight: bold;
+  margin: 0;
+}
+
+h3 {
+  font-size: $font-size-huge;
+}
+
+p {
+  margin: 0 0 1rem 0;
+}
+
 a {
   color: $color-fjord;
   text-decoration: none;
   outline: 0;
+  border-bottom: 1px solid #ddd;
 }
 
 a:hover, a:focus {
-  color: $color-bermuda;
-  border-bottom: 1px solid $color-bermuda;
+  color: $color-astronaut;
+  border-bottom: 1px solid $color-astronaut;
 }
 
 //------------------------------------------------
@@ -71,75 +103,4 @@ a:hover, a:focus {
 
 body {
   -webkit-tap-highlight-color: $color-shell;
-}
-
-//------------------------------------------------
-// BASIC STYLING
-//------------------------------------------------
-body {
-  background: $color-white;
-  font-size: 1.8rem;
-  line-height: 1.6;
-  font-family: 'Open Sans', sans-serif;
-  color: $color-dim-gray;
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust: 100%;
-}
-
-svg {
-  width: 100%;
-  height: 100%;
-}
-
-// Typography
-h1 {
-  font-size: 6.8rem;
-  line-height: 1.05;
-  letter-spacing: -1px;
-}
-
-h2 {
-  @extend %small-bold;
-  color: $color-fjord;
-  padding-bottom: 50px;
-  font-size: 2rem;
-  line-height: 1.38;
-  text-align: center;
-
-  .alt-section & {
-    color: darken($color-fjord, 10%);
-  }
-
-  .section-dark & {
-    color: white;
-  }
-}
-
-h3 {
-  font-size: 3rem;
-}
-
-fieldset {
-  padding: 0;
-  margin: 0;
-  border: none;
-}
-
-// Sections
-section {
-  padding: 100px 20px;
-}
-
-@media screen and (max-width: 600px) {
-  section {
-    padding: 50px 20px;
-  }
-}
-
-.alt-section {
-  background-color: $color-iceberg;
-}
-
-.section-dark {
-  background-color: $color-astronaut;
 }

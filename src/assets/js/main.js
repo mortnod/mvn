@@ -2,7 +2,7 @@ $(window).scroll(function(){
 
   var windowScroll = $(this).scrollTop();
 
-  if (windowScroll < $('.section-about').offset().top) {
+  if (windowScroll < $('.js-section-about').offset().top) {
     var mountains = {
       left1: {
         translateX: -1*(windowScroll/80) + '%',
@@ -44,15 +44,15 @@ $(window).scroll(function(){
        $(selector).css({"-webkit-transform": val, "transform":val});
     }
 
-    mountainTransform('.m-left-1', mountains.left1.scale, mountains.left1.translateX);
-    mountainTransform('.m-left-2', mountains.left2.scale, mountains.left2.translateX);
-    mountainTransform('.m-middle', mountains.middle.scale, mountains.middle.translateX);
-    mountainTransform('.m-right-5', mountains.right5.scale, mountains.right5.translateX);
-    mountainTransform('.m-right-4', mountains.right4.scale, mountains.right4.translateX);
-    mountainTransform('.m-right-3', mountains.right3.scale, mountains.right3.translateX);
-    mountainTransform('.m-right-2', mountains.right2.scale, mountains.right2.translateX);
-    mountainTransform('.m-right-1', mountains.right1.scale, mountains.right1.translateX);
+    mountainTransform('.js-mountain-left-1', mountains.left1.scale, mountains.left1.translateX);
+    mountainTransform('.js-mountain-left-2', mountains.left2.scale, mountains.left2.translateX);
+    mountainTransform('.js-mountain-middle', mountains.middle.scale, mountains.middle.translateX);
+    mountainTransform('.js-mountain-right-5', mountains.right5.scale, mountains.right5.translateX);
+    mountainTransform('.js-mountain-right-4', mountains.right4.scale, mountains.right4.translateX);
+    mountainTransform('.js-mountain-right-3', mountains.right3.scale, mountains.right3.translateX);
+    mountainTransform('.js-mountain-right-2', mountains.right2.scale, mountains.right2.translateX);
+    mountainTransform('.js-mountain-right-1', mountains.right1.scale, mountains.right1.translateX);
 
-    $('.tagline').css('opacity', 1 - windowScroll*0.03);
+    $('.js-header-tagline').css('opacity', 1 - windowScroll*0.03);
   }
 });

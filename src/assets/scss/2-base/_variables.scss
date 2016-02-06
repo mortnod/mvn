@@ -21,10 +21,21 @@ $color-saffron: #f7d33b;
 $color-emerald: #46e064;
 
 //------------------------------------------------
+// TYPOGRAPHY
+//------------------------------------------------
+$font-primary: 'Open Sans', sans-serif;
+$font-secondary: 'Josefin Sans', 'Open Sans', sans-serif;
+
+$font-size-medium: 1.8rem;
+$font-size-large: 2.6rem;
+$font-size-huge: 3rem;
+
+$font-line-height: 1.6;
+
+
+//------------------------------------------------
 // PLACEHOLDERS
 //------------------------------------------------
-%small-bold {
-  font-family: 'Josefin Sans', 'Open Sans', sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
+%box-shadow {
+  box-shadow: 0 1px 1px rgba(black, 0.2);
 }
