@@ -1,0 +1,28 @@
+.contact .section__header {
+  color: #98BDE7;
+  padding-bottom: 30px;
+}
+
+.contact-method {
+  font-size: 26px;
+  font-weight: 300;
+}
+
+.contact-img {
+  width: 26px;
+  height: 26px;
+  position: relative;
+  top: 4px;
+  margin-right: 5px;
+}
+
+.other .contact-img {
+  width: 32px;
+  height: 32px;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+.other a {
+  border-bottom: 0;
+}
