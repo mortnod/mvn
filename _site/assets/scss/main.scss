@@ -1,0 +1,21 @@
+// CSS ARCHITECTURE INSPIRED BY http://engineering.appfolio.com/2012/11/16/css-architecture/
+
+//------------------------------------------------
+// IMPORTS
+//------------------------------------------------
+// Import tools
+@import '1-tools/normalize';
+@import '1-tools/spinner';
+
+// Import base
+@import '2-base/variables';
+@import '2-base/base';
+@import '2-base/section';
+
+// Import sections
+@import '3-sections/header';
+@import '3-sections/about';
+@import '3-sections/contact';
+// @import '3-sections/skills';
+// @import '3-sections/work';
+// @import '3-sections/footer';

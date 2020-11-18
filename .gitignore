@@ -1,5 +1,4 @@
 # Project output folders
-_site
 src/assets/css/
 
 # Hide the Rsync credentials file
