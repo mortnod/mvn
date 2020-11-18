@@ -12,9 +12,6 @@ rsync-credentials.json
 # Packages
 node_modules/*
 
-# This might be a bad idea
-gemfile.lock
-
 # OS X
 ._*
 .AppleDouble
